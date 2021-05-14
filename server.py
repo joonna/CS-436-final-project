@@ -60,7 +60,6 @@ class Server:
                 print(f"[ACTIVE CONNECTIONS] {threading.activeCount() - 1}")
                 print(f"[USERS] {list(self.active_users.keys())}")
         except Exception as e:
-            # print(e)
             self.server.close()
 
 
